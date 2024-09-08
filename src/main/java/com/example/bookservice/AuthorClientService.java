@@ -1,10 +1,10 @@
 package com.example.bookservice;
 
 
-import com.example.Author;
-import com.example.BookAuthorServiceGrpc;
 import net.devh.boot.grpc.client.inject.GrpcClient;
 import org.springframework.stereotype.Service;
+import tech.utkorsho.grpc.Author;
+import tech.utkorsho.grpc.BookAuthorServiceGrpc;
 
 @Service
 public class AuthorClientService {
@@ -13,6 +13,11 @@ public class AuthorClientService {
 
 
     public Author getAuthor(Long id) {
-        return authorService.getAuthor(Author.newBuilder().setId(id).build());
+        try {
+            return authorService.getAuthor(Author.newBuilder().setId(id).build());
+
+        } catch (Exception e) {
+            throw new RuntimeException("Failed to get author", e);
+        }
     }
 }

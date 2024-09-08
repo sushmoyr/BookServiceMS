@@ -1,9 +1,9 @@
 package com.example.bookservice;
 
-import com.example.Author;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import tech.utkorsho.grpc.Author;
 
 import java.util.List;
 

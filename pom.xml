@@ -60,22 +60,28 @@
             <version>3.1.0.RELEASE</version>
         </dependency>
         <dependency>
-            <groupId>com.example</groupId>
-            <artifactId>Proto</artifactId>
-            <version>1.0-SNAPSHOT</version>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/../Proto/target/Proto-1.0-SNAPSHOT.jar</systemPath>
-            <exclusions>
-                <exclusion>
-                    <groupId>io.grpc</groupId>
-                    <artifactId>grpc-stub</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>io.grpc</groupId>
-                    <artifactId>google-protobuf</artifactId>
-                </exclusion>
-            </exclusions>
+            <groupId>tech.utkorsho</groupId>
+            <artifactId>utkorsho-proto-interface</artifactId>
+            <version>1.0.1-SNAPSHOT</version>
         </dependency>
+
+<!--        <dependency>-->
+<!--            <groupId>com.example</groupId>-->
+<!--            <artifactId>Proto</artifactId>-->
+<!--            <version>1.0-SNAPSHOT</version>-->
+<!--&lt;!&ndash;            <scope>system</scope>&ndash;&gt;-->
+<!--&lt;!&ndash;            <systemPath>${project.basedir}/lib/proto/Proto-1.0-SNAPSHOT.jar</systemPath>&ndash;&gt;-->
+<!--            <exclusions>-->
+<!--                <exclusion>-->
+<!--                    <groupId>io.grpc</groupId>-->
+<!--                    <artifactId>grpc-stub</artifactId>-->
+<!--                </exclusion>-->
+<!--                <exclusion>-->
+<!--                    <groupId>io.grpc</groupId>-->
+<!--                    <artifactId>google-protobuf</artifactId>-->
+<!--                </exclusion>-->
+<!--            </exclusions>-->
+<!--        </dependency>-->
     </dependencies>
 
     <build>
